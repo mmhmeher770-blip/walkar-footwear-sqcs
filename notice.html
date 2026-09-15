@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board - SQCS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .header {
+            background: linear-gradient(135deg, #1b365d, #2c4d75);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+        .notice-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            border-left: 5px solid #f39c12;
+        }
+        .notice-card h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .notice-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .date {
+            font-size: 11px;
+            color: #999;
+            text-align: right;
+            margin-top: 10px;
+        }
+        .back-btn {
+            display: block;
+            text-align: center;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>SQCS Notice Board</h2>
+            <p>Walker Footwear Quality Control Updates</p>
+        </div>
+
+        <div class="notice-card">
+            <h3>⚠️ গুরুত্বপূর্ণ গুণগত মান নির্দেশনা (Important QC Notice)</h3>
+            <p>উৎপাদন লাইনে প্রতিটি সেকশনে এহিউসিভ এবং সোল পেস্টিংয়ের সময় AQL স্ট্যান্ডার্ড কঠোরভাবে মেনে চলতে হবে। কোনো ডিফেক্ট পাওয়া গেলে তাৎক্ষণিক কারেক্টিভ অ্যাকশন নিতে হবে।</p>
+            <div class="date">তারিখ: ১৫ সেপ্টেম্বর, ২০২৬</div>
+        </div>
+
+        <div class="notice-card">
+            <h3>📢 নতুন আপডেট</h3>
+            <p>আজ থেকে সকল ইনলাইন এবং এন্ড-লাইন ইন্সপেকশন রিপোর্ট ডিজিটাল পদ্ধতিতে এই অ্যাপের মাধ্যমে পরিচালনা করা হবে।</p>
+            <div class="date">তারিখ: ১৪ সেপ্টেম্বর, ২০২৬</div>
+        </div>
+
+        <a href="index.html" class="back-btn">লগআউট / ফিরে যান</a>
+    </div>
+</body>
+</html>
