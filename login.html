@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQCS - Smart Quality Control System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, #1b365d, #2c4d75);
+            padding: 30px 20px 20px 20px;
+            border-radius: 12px 12px 0 0;
+            color: white;
+            margin: -25px -25px 20px -25px;
+        }
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            background-color: #fff;
+        }
+        .profile-header h1 {
+            font-size: 24px;
+            margin: 5px 0 0 0;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .profile-header p {
+            font-size: 12px;
+            margin: 0;
+            opacity: 0.9;
+        }
+        .features-list {
+            text-align: left;
+            margin: 15px 0 25px 0;
+            font-size: 13px;
+            color: #333;
+            line-height: 1.8;
+        }
+        .features-list div {
+            display: flex;
+            align-items: center;
+        }
+        .features-list div::before {
+            content: '✓';
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .brand-logo-container {
+            margin-bottom: 20px;
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .brand-logo {
+            max-width: 160px;
+            max-height: 55px;
+            object-fit: contain;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .login-btn {
+            background: linear-gradient(135deg, #f39c12, #d35400);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="profile-header">
+            <img src="IMG_20260915_193348.png" alt="Mehedi Hasan" class="profile-img">
+            <h1>SQCS</h1>
+            <p>Smart Quality Control System</p>
+        </div>
+        
+        <div class="features-list">
+            <div>Real-time Inspections</div>
+            <div>Data Analytics</div>
+            <div>Inline & End-line</div>
+            <div>Corrective Actions</div>
+        </div>
+
+        <div class="brand-logo-container">
+            <img src="IMG_20260915_193408.png" alt="WALKAR FOOTWEAR" class="brand-logo">
+        </div>
+
+        <div>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username" required placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" required placeholder="Enter password">
+            </div>
+            <button type="button" onclick="checkLogin()" class="login-btn">LOGIN</button>
+        </div>
+    </div>
+
+    <script>
+        function checkLogin() {
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+
+            if (user === "mehedi" && pass === "169121") {
+                window.location.href = "sections.html";
+            } else {
+                alert("ভুল ইউজারনেম অথবা পাসওয়ার্ড! সঠিক তথ্য দিন।");
+            }
+        }
+    </script>
+</body>
+</html>
